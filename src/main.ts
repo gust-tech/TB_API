@@ -9,10 +9,10 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Blog Pessoal')
-    .setDescription('Projeto do Blog Pessoal')
-    .setContact('Generation Brasil', 'www.genbr.com.br', 'gstvgeneration@.com')
-    .setVersion('1.0')
+    .setTitle('Blog Pessoal do Gustavo')
+    .setDescription('Projeto de Blog Pessoal')
+    .setContact('Gustavo Rocha', 'http://github.com/gust-tech', 'agustavo156@gmail.com')
+    .setVersion('4.0')
     .addBearerAuth()
     .build()
     const document = SwaggerModule.createDocument(app, config)
